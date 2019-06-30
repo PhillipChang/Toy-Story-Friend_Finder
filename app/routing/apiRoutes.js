@@ -14,19 +14,21 @@ module.exports = function(app){
         for(j = 0; j<userData.scores.length; j++){
             userData[j] = parseInt(question[j]); 
 
-                for ( i = 0; i<friendData.scores.length; i++){
-                difference = (question[j] - parseInt(friendData.scores[i])) *-1;
-                total+=difference;
-                var friend = {
-                    name: friendData.name,
-                    compatibility = total,
-                };
-                friendCompat.push(friend);
-            }
-        }
+                for ( i = 0; i<friendData.length; i++){
+                    for(m = 0; m<friendData[i].scores.length; m++){
+                        difference = (question[j] - parseInt(friendData[i].scores[m])) *-1;
+                        total += difference;
+                        var friend = {
+                            name: friendData.name,
+                            compatibility = total,
+                        };
+                        friendCompat.push(friend);
+                    }
+                }
+        }   
         for (d = 0; d<friendCompat.length; d++){
             for(l=0;l<lowest.length;l++){
-            if (friendCompat.compatibility[d] <= lowest.compatibility[l]){
+            if (friendCompat[d].compatibility <= lowest[l].compatibility){
               lowest[l] = friendCompat[d];  
             } 
             else{
@@ -34,6 +36,5 @@ module.exports = function(app){
             } 
             }
         }
-        // add logic for closest match for total.
     });
 }
