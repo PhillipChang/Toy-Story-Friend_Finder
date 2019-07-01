@@ -20,7 +20,7 @@ module.exports = function(app){
                         total += difference;
                         var friend = {
                             name: friendData.name,
-                            compatibility = total,
+                            compatibility: total,
                         };
                         friendCompat.push(friend);
                     }
