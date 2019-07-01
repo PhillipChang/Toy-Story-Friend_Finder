@@ -18,21 +18,174 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
 
     <title>Toy Story Friend </title>
+
+    <style>
+            .checked {
+              color: orange;
+            }
+            </style>
   </head>
   <body>
-        <div class="jumbotron text-center">
-                <h1 class="display-4"><img src="../images/favicon.png">Friend Finder!</h1>
-                <p class="lead">Answer a few questions honestly...</p>
-                <p class="lead">And find your perfect friend</p>
+        <div class="jumbotron text-left">
+                <h1 class="display-4 text-center"><img src="../images/favicon.png">Questions!</h1>
                 <hr class="my-4">
-                <a class="btn btn-primary btn-lg" href="/survey" role="button"><span class="fas fa-users"></span>&nbsp Find My Friend!</a>
-              </div>
+                <form>
+                        <div class="form-group">
+                          <label for="Name">Name<br><p class="text-danger">*Required</p></label>
+                          <input type="text" class="form-control col-md-4" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="Photo">Link to Photo Image<br><p class="text-danger">*Required</p></label>
+                          <input type="text" class="form-control col-md-4" id="photo-url" placeholder="https://giphy.com/gifs/pokemon-sweet-pikachu-39GAXpLVKvYRO">
+                        </div>
+
+                        <div class="form-group">
+                                <h4>Question 1</h4>
+                                <label for="CustomSelect">You are Fearless</label><br>
+                                <select class="custom-select col-md-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                                <h4>Question 2</h4>
+                                <label for="CustomSelect">Exploration excites you</label><br>
+                                <select class="custom-select col-md-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                                <h4>Question 3</h4>
+                                <label for="CustomSelect">You react calm under pressure</label><br>
+                                <select class="custom-select col-md-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                                <h4>Question 4</h4>
+                                <label for="CustomSelect">You rarely do something just out of sheer curiosity</label><br>
+                                <select class="custom-select col-md-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                                <h4>Question 5</h4>
+                                <label for="CustomSelect">You always have a plan</label><br>
+                                <select class="custom-select col-md-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                                <h4>Question 6<h4>
+                                <label for="CustomSelect">You are usually the leader of the group</label><br>
+                                <select class="custom-select col-md-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                                <h4>Question 7</h4>
+                                <label for="CustomSelect">In a discussion, you listen to ideas of your peers</label><br>
+                                <select class="custom-select col-md-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                                <h4>Question 8</h4>
+                                <label for="CustomSelect">You like hats</label><br>
+                                <select class="custom-select col-md-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                            <h4>Question 9</h4>
+                                <label for="CustomSelect">You always think about including others in activities</label><br>
+                                <select class="custom-select col-md-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                            <h4>Question 10</h4>
+                                <label for="CustomSelect">You always got your friend's back</label><br>
+                                <select class="custom-select col-md-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                              </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><span class ="fas fa-hand-point-right"></span>&nbsp Submit</button>
+                      
+                    </form>
+            </div>
+        <br><br>
+        <p>
+            <a class="btn btn-danger btn-lg" id="api-friends" href="/api/friends" role="button"><span class="fas fa-users"></span>&nbsp API Friends List!</a>
+            <a class="btn btn-danger btn-lg" id="github" href="https://github.com/PhillipChang/Toy-Story-Friend_Finder" role="button"><span class="fas fa-users"></span>&nbsp GitHub Repo!</a>  
+        </p>  
+
+
 
     <script>
     $(document).ready(function(){
     $("html").css("background","url('../images/background.jpg')");
     $(".jumbotron").css("background","none");
     $("body").css("opacity",0.75);
+
+    $("#star1").on("click",function(){
+    if(star1.attr() === "clicked"){
+        $("#star1").attr("value='clicked'");
+    }
+    else {
+        $("#star1").attr("value='unclicked'");
+        $("#star1").removeClass("checked");
+    }
+});
     });
     </script>
 
