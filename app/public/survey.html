@@ -21,15 +21,15 @@
   </head>
   <body>
         <div class="jumbotron text-left">
-                <h1 class="display-4 text-center"><img src="../images/favicon.png">Questions!</h1>
+                <h1 class="display-4 text-center font-weight-bold"><img src="../images/favicon.png">Questions!</h1>
                 <hr class="my-4">
-                <form>
+                <form class="font-weight-bold">
                         <div class="form-group">
-                          <label for="Name">Name<br><p class="text-danger">*Required</p></label>
+                          <label for="Name">Name<p class="text-danger">*Required</p></label>
                           <input type="text" class="form-control col-md-4 questions" id="name" placeholder="Your Name">
                         </div>
                         <div class="form-group">
-                          <label for="Photo">Link to Photo Image<br><p class="text-danger">*Required</p></label>
+                          <label for="Photo">Link to Photo Image<span></span><p class="text-danger">*Required</p></label>
                           <input type="text" class="form-control col-md-4 questions" id="photo-url" placeholder="https://giphy.com/gifs/pokemon-sweet-pikachu-39GAXpLVKvYRO">
                         </div>
 
@@ -37,7 +37,7 @@
                                 <h4>Question 1</h4>
                                 <label for="CustomSelect">You are Fearless</label><br>
                                 <select class="custom-select col-md-2 questions" id="q1">
-                                <option selected>Open this select menu</option>
+                                <option selected></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -49,7 +49,7 @@
                                 <h4>Question 2</h4>
                                 <label for="CustomSelect">Exploration excites you</label><br>
                                 <select class="custom-select col-md-2 questions" id="q2">
-                                <option selected>Open this select menu</option>
+                                <option selected></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -61,7 +61,7 @@
                                 <h4>Question 3</h4>
                                 <label for="CustomSelect">You react calm under pressure</label><br>
                                 <select class="custom-select col-md-2 questions" id="q3">
-                                <option selected>Open this select menu</option>
+                                <option selected></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -73,7 +73,7 @@
                                 <h4>Question 4</h4>
                                 <label for="CustomSelect">You rarely do something just out of sheer curiosity</label><br>
                                 <select class="custom-select col-md-2 questions" id="q4">
-                                <option selected>Open this select menu</option>
+                                <option selected></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -85,7 +85,7 @@
                                 <h4>Question 5</h4>
                                 <label for="CustomSelect">You always have a plan</label><br>
                                 <select class="custom-select col-md-2 questions" id="q5">
-                                <option selected>Open this select menu</option>
+                                <option selected></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -97,7 +97,7 @@
                                 <h4>Question 6</h4>
                                 <label for="CustomSelect">You are usually the leader of the group</label><br>
                                 <select class="custom-select col-md-2 questions" id="q6">
-                                <option selected>Open this select menu</option>
+                                <option selected></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -109,7 +109,7 @@
                                 <h4>Question 7</h4>
                                 <label for="CustomSelect">In a discussion, you listen to ideas of your peers</label><br>
                                 <select class="custom-select col-md-2 questions" id="q7">
-                                <option selected>Open this select menu</option>
+                                <option selected></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -121,7 +121,7 @@
                                 <h4>Question 8</h4>
                                 <label for="CustomSelect">You like hats</label><br>
                                 <select class="custom-select col-md-2 questions" id="q8">
-                                <option selected>Open this select menu</option>
+                                <option selected></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -133,7 +133,7 @@
                             <h4>Question 9</h4>
                                 <label for="CustomSelect">You always think about including others in activities</label><br>
                                 <select class="custom-select col-md-2 questions" id="q9">
-                                <option selected>Open this select menu</option>
+                                <option selected></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -145,7 +145,7 @@
                             <h4>Question 10</h4>
                                 <label for="CustomSelect">You always got your friend's back</label><br>
                                 <select class="custom-select col-md-2 questions" id="q10">
-                                <option selected>Open this select menu</option>
+                                <option selected></option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -159,7 +159,7 @@
         <br><br>
         <p>
             <a class="btn btn-danger btn-lg" id="api-friends" href="/api/friends" role="button"><span class="fas fa-users"></span>&nbsp API Friends List!</a>
-            <a class="btn btn-danger btn-lg" id="github" href="https://github.com/PhillipChang/Toy-Story-Friend_Finder" role="button"><span class="fas fa-users"></span>&nbsp GitHub Repo!</a>  
+            <a class="btn btn-danger btn-lg" id="github" href="https://github.com/PhillipChang/Toy-Story-Friend_Finder" role="button"><span class="fab fa-github"></span>&nbsp GitHub Repo!</a>  
         </p>  
 
         <div class="modal" tabindex="-1" role="dialog" id="myModal">
@@ -171,7 +171,7 @@
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body text-center">
                       <h1 class="friend-name"></h1>
                       <img class="friend-pic" width="40%">
                     </div>
@@ -194,30 +194,24 @@
         $(document).ready(function(){
         $("html").css("background","url('../images/background.jpg')");
         $(".jumbotron").css("background","none");
-        $("body").css("opacity",0.75);
+        $("body").css("opacity",0.85);
+        var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "../audio/song.MP3");
+        audioElement.play();
     });
     
     
     $(".submit").on("click", function(event) {
         event.preventDefault();
-        
-        // Form check
-        function checkForm(){
         var check = true;
-        
-        $(".questions").each(function(){
-        if($(this).val() === ""){
+
+    if($("#name").val() === "" || $("#photo-url").val() === ""){
+        check = false;
+    }
+        else if ($("#q1").val() === "" || $("#q2").val() === "" || $("#q3").val() === "" || $("#q4").val() === "" || $("#q5").val() === "" || $("#q6").val() === "" || $("#q7").val() === "" || $("#q8").val() === "" || $("#q9").val() === "" || $("#q10").val() === ""){
             check = false;
         }
-    });
-    // $(".custom-select").each(function(){
-    //     if ($(this).val() === ""){
-    //         check = false;
-    //     }
-    // });
-    return check;
-    }
-        if (checkForm()){
+        if (check === true){
         var userInput = {
             name: $("#name").val().trim(),
             photo: $("#photo-url").val().trim(),
@@ -235,7 +229,6 @@
             ]
         };
     
-        console.log(userInput);
         $.post("/api/friends", userInput,function(data){
         $(".friend-name").text(data.name);
         $(".friend-pic").attr("src", data.photo);
