@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Latest compiled and minified CSS & JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png"  href="../images/favicon.png">
@@ -14,16 +17,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9210a6e6ef.js"></script>
 
-    <!-- jQuery Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
-
     <title>Toy Story Friend </title>
-
-    <style>
-            .checked {
-              color: orange;
-            }
-            </style>
   </head>
   <body>
         <div class="jumbotron text-left">
@@ -32,17 +26,17 @@
                 <form>
                         <div class="form-group">
                           <label for="Name">Name<br><p class="text-danger">*Required</p></label>
-                          <input type="text" class="form-control col-md-4" id="name" placeholder="Your Name">
+                          <input type="text" class="form-control col-md-4 questions" id="name" placeholder="Your Name">
                         </div>
                         <div class="form-group">
                           <label for="Photo">Link to Photo Image<br><p class="text-danger">*Required</p></label>
-                          <input type="text" class="form-control col-md-4" id="photo-url" placeholder="https://giphy.com/gifs/pokemon-sweet-pikachu-39GAXpLVKvYRO">
+                          <input type="text" class="form-control col-md-4 questions" id="photo-url" placeholder="https://giphy.com/gifs/pokemon-sweet-pikachu-39GAXpLVKvYRO">
                         </div>
 
                         <div class="form-group">
                                 <h4>Question 1</h4>
                                 <label for="CustomSelect">You are Fearless</label><br>
-                                <select class="custom-select col-md-2">
+                                <select class="custom-select col-md-2 questions" id="q1">
                                 <option selected>Open this select menu</option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
@@ -54,7 +48,7 @@
                         <div class="form-group">
                                 <h4>Question 2</h4>
                                 <label for="CustomSelect">Exploration excites you</label><br>
-                                <select class="custom-select col-md-2">
+                                <select class="custom-select col-md-2 questions" id="q2">
                                 <option selected>Open this select menu</option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
@@ -66,7 +60,7 @@
                         <div class="form-group">
                                 <h4>Question 3</h4>
                                 <label for="CustomSelect">You react calm under pressure</label><br>
-                                <select class="custom-select col-md-2">
+                                <select class="custom-select col-md-2 questions" id="q3">
                                 <option selected>Open this select menu</option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
@@ -78,7 +72,7 @@
                         <div class="form-group">
                                 <h4>Question 4</h4>
                                 <label for="CustomSelect">You rarely do something just out of sheer curiosity</label><br>
-                                <select class="custom-select col-md-2">
+                                <select class="custom-select col-md-2 questions" id="q4">
                                 <option selected>Open this select menu</option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
@@ -90,7 +84,7 @@
                         <div class="form-group">
                                 <h4>Question 5</h4>
                                 <label for="CustomSelect">You always have a plan</label><br>
-                                <select class="custom-select col-md-2">
+                                <select class="custom-select col-md-2 questions" id="q5">
                                 <option selected>Open this select menu</option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
@@ -100,9 +94,9 @@
                               </select>
                         </div>
                         <div class="form-group">
-                                <h4>Question 6<h4>
+                                <h4>Question 6</h4>
                                 <label for="CustomSelect">You are usually the leader of the group</label><br>
-                                <select class="custom-select col-md-2">
+                                <select class="custom-select col-md-2 questions" id="q6">
                                 <option selected>Open this select menu</option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
@@ -114,7 +108,7 @@
                         <div class="form-group">
                                 <h4>Question 7</h4>
                                 <label for="CustomSelect">In a discussion, you listen to ideas of your peers</label><br>
-                                <select class="custom-select col-md-2">
+                                <select class="custom-select col-md-2 questions" id="q7">
                                 <option selected>Open this select menu</option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
@@ -126,7 +120,7 @@
                         <div class="form-group">
                                 <h4>Question 8</h4>
                                 <label for="CustomSelect">You like hats</label><br>
-                                <select class="custom-select col-md-2">
+                                <select class="custom-select col-md-2 questions" id="q8">
                                 <option selected>Open this select menu</option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
@@ -138,7 +132,7 @@
                         <div class="form-group">
                             <h4>Question 9</h4>
                                 <label for="CustomSelect">You always think about including others in activities</label><br>
-                                <select class="custom-select col-md-2">
+                                <select class="custom-select col-md-2 questions" id="q9">
                                 <option selected>Open this select menu</option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
@@ -150,7 +144,7 @@
                         <div class="form-group">
                             <h4>Question 10</h4>
                                 <label for="CustomSelect">You always got your friend's back</label><br>
-                                <select class="custom-select col-md-2">
+                                <select class="custom-select col-md-2 questions" id="q10">
                                 <option selected>Open this select menu</option>
                                 <option value="1">1 (Strongly Disagree)</option>
                                 <option value="2">2</option>
@@ -159,8 +153,7 @@
                                 <option value="5">5 (Strongly Agree)</option>
                               </select>
                         </div>
-                        <button type="submit" class="btn btn-primary"><span class ="fas fa-hand-point-right"></span>&nbsp Submit</button>
-                      
+                        <button type="submit" class="btn btn-primary submit" data-toggle="modal" data-target="myModal"><span class ="fas fa-hand-point-right"></span>&nbsp Submit</button>
                     </form>
             </div>
         <br><br>
@@ -169,31 +162,90 @@
             <a class="btn btn-danger btn-lg" id="github" href="https://github.com/PhillipChang/Toy-Story-Friend_Finder" role="button"><span class="fas fa-users"></span>&nbsp GitHub Repo!</a>  
         </p>  
 
+        <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">We found your Friend!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h1 class="friend-name"></h1>
+                      <img class="friend-pic" width="40%">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-
-    <script>
-    $(document).ready(function(){
-    $("html").css("background","url('../images/background.jpg')");
-    $(".jumbotron").css("background","none");
-    $("body").css("opacity",0.75);
-
-    $("#star1").on("click",function(){
-    if(star1.attr() === "clicked"){
-        $("#star1").attr("value='clicked'");
-    }
-    else {
-        $("#star1").attr("value='unclicked'");
-        $("#star1").removeClass("checked");
-    }
-});
-    });
-    </script>
-
-    
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<script>
+        $(document).ready(function(){
+        $("html").css("background","url('../images/background.jpg')");
+        $(".jumbotron").css("background","none");
+        $("body").css("opacity",0.75);
+    });
+    
+    
+    $(".submit").on("click", function(event) {
+        event.preventDefault();
+        
+        // Form check
+        function checkForm(){
+        var check = true;
+        
+        $(".questions").each(function(){
+        if($(this).val() === ""){
+            check = false;
+        }
+    });
+    // $(".custom-select").each(function(){
+    //     if ($(this).val() === ""){
+    //         check = false;
+    //     }
+    // });
+    return check;
+    }
+        if (checkForm()){
+        var userInput = {
+            name: $("#name").val().trim(),
+            photo: $("#photo-url").val().trim(),
+            scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val(),
+            ]
+        };
+    
+        console.log(userInput);
+        $.post("/api/friends", userInput,function(data){
+        $(".friend-name").text(data.name);
+        $(".friend-pic").attr("src", data.photo);
+        $("#myModal").modal("toggle");
+    });
+}
+else {
+    alert("You have not filled out all questions!");
+}
+});
+
+    
+</script>
