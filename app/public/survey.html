@@ -21,7 +21,7 @@
   </head>
   <body>
         <div class="jumbotron text-left">
-                <h1 class="display-4 text-center font-weight-bold"><img src="../images/favicon.png">Questions!</h1>
+                <h1 class="display-4 text-left font-weight-bold"><img src="../images/favicon.png">Questions!</h1>
                 <hr class="my-4">
                 <form class="font-weight-bold">
                         <div class="form-group">
@@ -199,6 +199,8 @@
         $("html").css("background-size","cover");
         $(".jumbotron").css("background","none");
         $("body").css("background-color","transparent");
+        $("body").css("color","darkblue");
+        $("body").css("font-weight","bolder");
         var audioElement = document.createElement("audio");
         audioElement.setAttribute("src", "../audio/song.MP3");
         audioElement.play();
