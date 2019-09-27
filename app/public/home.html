@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png"  href="../images/favicon.png">
 
@@ -35,9 +38,12 @@
 
     <script>
     $(document).ready(function(){
-    $("html").css("background","url('../images/background.jpg')");
-    $(".jumbotron").css("background","none");
-    $("body").css("opacity",0.85);
+    $("html").css("background","url('../images/background.jpg') no-repeat center center fixed");
+    $("html").css("-webkit-background-size","cover");
+    $("html").css("-moz-background-size","cover");
+    $("html").css("-o-background-size","cover");
+    $("html").css("background-size","cover");    $(".jumbotron").css("background","none");
+    $("body").css("opacity",0.75);
     });
     </script>
 

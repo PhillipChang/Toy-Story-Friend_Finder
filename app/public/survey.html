@@ -192,9 +192,13 @@
 
 <script>
         $(document).ready(function(){
-        $("html").css("background","url('../images/background.jpg')");
+        $("html").css("background","url('../images/background.jpg') no-repeat center center fixed");
+        $("html").css("-webkit-background-size","cover");
+        $("html").css("-moz-background-size","cover");
+        $("html").css("-o-background-size","cover");
+        $("html").css("background-size","cover");
         $(".jumbotron").css("background","none");
-        $("body").css("opacity",0.85);
+        $("body").css("background-color","transparent");
         var audioElement = document.createElement("audio");
         audioElement.setAttribute("src", "../audio/song.MP3");
         audioElement.play();
